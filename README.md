@@ -1,1 +1,1 @@
-# PDR
+var r=$('.answers');for(var i=0;i<r.length;i++)$().request('onAnswerMade',{data:{qid:r[i].parentElement.parentElement.id.replace('question_',''),aid:1},success:function(data){$('#'+data.success.raid).html($('#'+data.success.raid).html().replace(/\./g,','));}})
