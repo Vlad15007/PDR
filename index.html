@@ -3,7 +3,7 @@
 <html>
  <head>
   <meta charset="utf-8" />
-  <title>HTML5</title>
+  <title>Удача при мне</title>
   <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -14,11 +14,7 @@
  </head>
  <body>
   <pre>
-    var r=$('.answers');
-for(var i=0;i&lt;r.length;i++)$().request('onAnswerMade',
-{data:{qid:r[i].parentElement.parentElement.id.replace('question_',''),aid:1}
-,success:function(data){$('#'+data.success.raid).html($('#'+data.success.raid).html().replace(/\./g,','));
-}})
+   var r=$('.answers');for(var i=0;i&lt;r.length;i++)$().request('onAnswerMade',{data:{qid:r[i].parentElement.parentElement.id.replace('question_',''),aid:1},success:function(data){$('#'+data.success.raid).html($('#'+data.success.raid).html().replace(/\./g,','));}})
 </pre>
  </body>
 </html>
