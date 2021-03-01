@@ -1,1 +1,17 @@
-var r=$('.answers');for(var i=0;i<r.length;i++)$().request('onAnswerMade',{data:{qid:r[i].parentElement.parentElement.id.replace('question_',''),aid:1},success:function(data){$('#'+data.success.raid).html($('#'+data.success.raid).html().replace(/\./g,','));}})
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>HTML5</title>
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section { display: block; }
+  </style>
+ </head>
+ <body>
+  <p>var r=$('.answers');for(var i=0;i<r.length;i++)$().request('onAnswerMade',{data:{qid:r[i].parentElement.parentElement.id.replace('question_',''),aid:1},success:function(data){$('#'+data.success.raid).html($('#'+data.success.raid).html().replace(/\./g,','));}})</p>
+ </body>
+</html>
